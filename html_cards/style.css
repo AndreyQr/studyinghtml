@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    float: left;
+    position: absolute;
+}
+
+.one {
+    z-index: 1;
+}
+
+.two {
+    left: 50px;
+    top: 50px;
+    z-index: 2;
+}
+
+.three {
+    left: 100px;
+    top: 100px;
+    z-index: 3;
+}
+
+.four {
+    left: 150px;
+    top: 150px;
+    z-index: 4;
+}
+
+.five {
+    left: 200px;
+    top: 200px;
+    z-index: 5;
+}
+
+.one:hover {
+    z-index: 6;
+}
+
+.two:hover {
+    z-index: 6;
+}
+
+.three:hover {
+    z-index: 6;
+}
+
+.four:hover {
+    z-index: 6;
+}
+
+/*.five:hover{
+    z-index: 6;
+}*/
