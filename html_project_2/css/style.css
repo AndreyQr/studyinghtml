@@ -451,7 +451,6 @@ body {
     margin: 0 10px 18px 2px;
 }
 .copyright {
-    clear: both;
     width: 100%;
     background-color: #fff;
 }
@@ -464,4 +463,38 @@ body {
     letter-spacing: 0.3px;
     display: block;
     text-align: center;
+}
+.social{
+    clear: both;
+    padding: 15px 0 0 0;
+}
+.fcb-ico {
+    background-image: url(../img/fcb.png);
+    width: 43px;
+    height: 42px;
+    display: inline-block;
+}
+.insta-ico {
+    width: 43px;
+    height: 42px;
+    display: inline-block;
+    background-image: url(../img/insta.png);
+}
+.twit-ico {
+    width: 43px;
+    height: 42px;
+    display: inline-block;
+    background-image: url(../img/twit.png);
+}
+.google-ico {
+    width: 43px;
+    height: 42px;
+    display: inline-block;
+    background-image: url(../img/gicon.png);
+}
+.youtube-ico {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background-image: url(../img/youtube.png);
 }
