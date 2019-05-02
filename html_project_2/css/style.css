@@ -251,6 +251,13 @@ body {
 }
 
 /* Price */
+.price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
 .price-title {
     display: block;
     text-align: center;
@@ -263,7 +270,6 @@ body {
 }
 
 .standart {
-    margin: 300px 0 50px 145px;
     width: 300px;
     background-color: #445161;
     float: left;
@@ -320,13 +326,11 @@ body {
     border-radius: 10px;
     line-height: 40px;
 }
-
-.standart:nth-child(3) {
-    margin: 204px 0 50px 45px;
+.btn-buy:hover{
+    box-shadow: 0 0 10px #aaa;
 }
-
-.standart:nth-child(4) {
-    margin: 108px 0 50px 45px;
+.btn-buy:active{
+    background-color: gray;
 }
 
 .main-footer {
@@ -348,7 +352,8 @@ body {
 .footer-form {
     padding: 30px 46px 0 240px;
     display: inline-block;
-    width: 37%
+    width: 37%;
+
 }
 
 .name {
@@ -360,6 +365,7 @@ body {
     border-radius: 10px;
     display: block;
     padding-left: 10px;
+    outline: none;
 }
 
 .email {
@@ -372,6 +378,7 @@ body {
     display: block;
     margin: 20px 0 20px 0;
     padding-left: 10px;
+    outline: none;
 }
 
 .txtarea {
@@ -383,6 +390,8 @@ body {
     border-radius: 10px;
     display: block;
     padding: 10px 0 0 10px;
+    resize: none;
+    outline: none;
 }
 
 .btn-submit {
@@ -393,10 +402,15 @@ body {
     margin: 20px 0 50px 200px;
     color: #445162;
     font-family: "Arial";
-    font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
+}
+.btn-submit:hover {
+    box-shadow: 0 0 10px #aaa;
+    cursor: pointer;
+}
+.btn-submit:active {
+    border: 5px solid black;
 }
 
 /*Иконки*/
@@ -450,10 +464,12 @@ body {
     float: left;
     margin: 0 10px 18px 2px;
 }
+
 .copyright {
     width: 100%;
     background-color: #fff;
 }
+
 .copy-txt {
     color: #445162;
     font-family: "Arial";
@@ -464,34 +480,40 @@ body {
     display: block;
     text-align: center;
 }
-.social{
+
+.social {
     clear: both;
     padding: 15px 0 0 0;
 }
+
 .fcb-ico {
     background-image: url(../img/fcb.png);
     width: 43px;
     height: 42px;
     display: inline-block;
 }
+
 .insta-ico {
     width: 43px;
     height: 42px;
     display: inline-block;
     background-image: url(../img/insta.png);
 }
+
 .twit-ico {
     width: 43px;
     height: 42px;
     display: inline-block;
     background-image: url(../img/twit.png);
 }
+
 .google-ico {
     width: 43px;
     height: 42px;
     display: inline-block;
     background-image: url(../img/gicon.png);
 }
+
 .youtube-ico {
     width: 42px;
     height: 42px;
