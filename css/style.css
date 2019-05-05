@@ -130,3 +130,39 @@ body {
     box-shadow:  5px 10px 5px #362f2d;
     background-color: #595f6f;
 }
+.mobile {
+    background-color: #fbfaf8;
+    background: url(../img/iPhone_in_hand.png) no-repeat 27% 0%;
+    height: 700px;
+}
+.mobile_txt{
+        margin: 195px 0 0 877px;
+}
+.mobile h1 {
+    color: #555555;
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.mobile p {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    width: 667px;
+    margin-bottom: 45px;
+}
+.mobile_list {
+    list-style-image: url(../img/mobilelist.png);
+    margin-left: 80px;
+}
+.mobile_list li {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    padding-left: 20px;
+}
