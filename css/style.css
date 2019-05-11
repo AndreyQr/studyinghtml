@@ -53,10 +53,31 @@ header {
 .nav_list li a:active{
    color: chocolate; 
 }
+.slider {
+    position: relative;
+}
+.left_arrow {
+    display: block;
+    background-image: url(../img/left.png);
+    width: 40px;
+    height: 73px;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
+.right_arrow {
+    display: block;
+    background-image: url(../img/right.png);
+    width: 40px;
+    height: 73px;
+    position: absolute;
+    right: 150px;
+    top: 100px;
+}
 .slider_txt {
     width: 592px;
     text-align: center;
-    margin: 285px 0 0 732px;
+    margin: 285px 0 0 666px;
 }
 .slider_txt span{
     display: block;
@@ -100,9 +121,35 @@ header {
 }
 .slider_txt_btn:hover{
     background-color: burlywood;
+    box-shadow: inset 0 -3px 0 burlywood;
 }
 .slider_txt_btn:active{
     background-color: chocolate;
+    box-shadow: inset 0 -3px 0 chocolate;
+}
+.pagination{
+    position: absolute;
+    left: 900px;
+    top: 620px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    
+}
+.slider_button {
+    width: 11px;
+    height: 11px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    border-radius: 7px;
+    border: 2px solid #000;
+}
+.slider_button:hover{
+    width: 11px;
+    height: 11px;
+    border: 2px solid #d3c1ad;
+    background-color: black;
+    border-radius: 8px;
 }
 /*--------- Блок с иконками SVG--------*/
 .description_icons {
@@ -157,18 +204,87 @@ header {
 .description_icons_first:hover::after{
     background-color: #c7b299;
 } 
-/*
-.description_icons_first:nth-child(2) span{
-    margin-top: 39px;
+/*BG-images*/
+.bg-img {
+    width: 1920px;
+    min-height: 700px;
+    background-color: #fbfaf8;
+    background-image: url(../img/browser-center.jpg),
+                      url(../img/browser-right.jpg),
+                      url(../img/browser-left.jpg);
+    background-repeat: no-repeat;
+    background-size: 40%, 40%, 40%;
+    background-position: 50% 101%, 70% 100%, 30% 100%;
 }
-.description_icons_first:nth-child(3){
-    margin: 75px 0 0 0;
+.bg-img h2 {
+    color: #555555;
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    margin: 0 0 24px 0;
 }
-.description_icons_first:nth-child(3) span {
-    margin: 38px 0 23px 0;
+.bg-img p {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    width: 777px;
+    margin-left: 583px;
+    text-align: center;
 }
-*/
-
+/*Aside purchase*/
+.purchase {
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    padding: 50px 0 0 374px;
+}
+.purchase h3 {
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 400;
+    color: #c7b299;
+    margin-bottom: 10px;
+}
+.purchase_title { 
+    color: #ffffff;
+}
+.purchase_txt {
+    color: #615855;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 50px;
+    display: inline-block;
+}
+.purchase a {
+    display: block;
+    width: 170px;
+    height: 50px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    margin-right: 374px;
+}
+.purchase a:hover {
+    background-color: burlywood;
+    box-shadow: inset 0 -3px 0 burlywood;
+}
+.purchase a:active {
+    background-color: chocolate;
+    box-shadow: inset 0 -3px 0 chocolate;
+}
 /*----------- Второй блок c картинками ----------*/
 .img_title {
     color: #555555;
@@ -233,6 +349,13 @@ header {
     font-size: 14px;
     font-weight: 300;
 }
+.btn_all:active {
+    background-color: #fff;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+}
 
 .images_row {
     margin: 40px 0 0 376px;
@@ -284,20 +407,72 @@ header {
     margin: 40px 0 80px 876px;
 }
 .btn_img:hover{
-    background-color: #362f2d;
-    box-shadow: inset 0 -3px 0 #362f2d;
+    background-color: burlywood;
+    box-shadow: inset 0 -3px 0 burlywood;
 }
+
 .btn_img:active{
-    box-shadow:  5px 10px 5px #362f2d;
-    background-color: #595f6f;
+    background-color: chocolate;
+    box-shadow: inset 0 -3px 0 chocolate;
 }
+
+.video_presentation {
+    width: 1920px;
+    min-height: 705px;
+    background-image: url(../img/video_bg.jpg);
+}
+.video_txt {
+    position: relative;
+    padding: 250px 0 0 0;
+}
+.icon_circle{
+    position: absolute;
+    left: 910px;
+    top: 210px
+}
+.icon_play {
+    position: absolute;
+    left: 925px;
+    top: 225px;
+    fill: #ffffff;
+}
+.video_txt h3{
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 100px
+}
+.video_txt_span {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    width: 562px;
+    display: block;
+    margin: 30px 0 0 685px;
+}
+.video_time {
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    margin-left: 940px;
+    margin-top: 40px;
+}
+/*-------Мобильный телефон--------*/
 .mobile {
     background-color: #fbfaf8;
-    background: url(../img/iPhone_in_hand.png) no-repeat 27% 0%;
-    height: 700px;
+    background: url(../img/iPhone_in_hand.png) no-repeat 27% 100%;
+    min-height: 700px;
 }
 .mobile_txt{
-        margin: 195px 0 0 877px;
+    padding: 195px 0 0 877px;
 }
 .mobile h1 {
     color: #555555;
@@ -326,4 +501,64 @@ header {
     font-weight: 300;
     line-height: 32px;
     padding-left: 20px;
+}
+.stats {
+    width: 1920px;
+    min-height: 300px;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    display: flex;
+}
+.stats_block:first-child{
+    padding-left: 540px;
+}
+.stats_block {
+    padding-top: 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    margin-right: 100px;
+}
+.stats_block::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 30px 0 0 50px;
+}
+.stats_block_svg{
+    display: block;
+    padding-left: 45px;
+    fill: #c7b299;
+}
+.stats_block_numbers{
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 48px;
+    font-weight: lighter;
+    line-height: 36px;
+    margin: 30px 0 20px 0;
+}
+.stats_block_txt {
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.stats_block:nth-child(4) svg{
+    padding-left: 25px;
+}
+.stats_block:nth-child(5) svg{
+    padding-left: 28px;
+}
+.stats_block:nth-child(3) svg{
+    padding-left: 40px;
+}
+.stats_block:nth-child(4)::after{
+    margin-left: 30px;
 }
