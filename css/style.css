@@ -1,4 +1,81 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:400,500,600,700,800|Roboto|Ultra');
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+        url('../fonts/roboto/roboto-regular-webfont.woff') format('woff'),
+        url('../fonts/roboto/roboto-regular-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway_extrabold';
+    src: url('../fonts/raleway/raleway-extrabold-webfont.woff2') format('woff2'), url('../fonts/raleway/raleway-extrabold-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-extrabold-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway_bold';
+    src: url('../fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-bold-webfont.ttf'), url('../fonts/raleway/raleway-bold-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway_medium';
+    src: url('../fonts/raleway/raleway-medium-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-medium-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-medium-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-regular-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway_semibold';
+    src: url('../fonts/raleway/raleway-semibold-webfont.woff2') format('woff2'), url('../fonts/raleway/raleway-semibold-webfont.woff') format('woff'),
+        url('../fonts/raleway/raleway-semibold-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_extralight';
+    src: url('../fonts/montserrat/montserrat-extralight-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat/montserrat-extralight-webfont.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-extralight-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_light';
+    src: url('../fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat/montserrat-light-webfont.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-light-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat/montserrat-regular-webfont.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-regular-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -31,14 +108,16 @@ header {
 
 .logo-icon {
     fill: #ffffff;
+    transition: fill 0.5s ease-out;
 }
 
 .header_logo_cont span {
-    font-family: Raleway;
+    font-family: 'raleway';
     font-size: 34px;
     letter-spacing: -1.36px;
     color: #ffffff;
     margin: 10px 0 0 0;
+    transition: color 0.5s ease-out;
 }
 
 .header_logo_cont:hover svg {
@@ -67,15 +146,15 @@ header {
 
 .nav_list li a {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 14px;
-    font-weight: 300;
     text-decoration: none;
+    transition: color 0.4s ease;
+    padding: 5px;
 }
 
 .nav_list li a:hover {
     color: #c7b299;
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 300;
 }
@@ -115,10 +194,11 @@ header {
     position: absolute;
     transition: width 1s ease-out;
     background-position: right;
+    margin-left: 10px;
 }
 
 .search_icon:focus {
-    width: 200px;
+    width: 150px;
     transition: width 1s ease-out;
     background-position: right;
     border: 1px solid gray;
@@ -160,7 +240,6 @@ header {
 }
 
 .slider-arrow-right {
-    /*    display: block;*/
     width: 40px;
     height: 73px;
     position: relative;
@@ -199,23 +278,22 @@ header {
     display: block;
     text-align: center;
     color: #ffffff;
-    font-family: Raleway;
+    font-family: 'raleway_medium';
     font-size: 36px;
     font-weight: 500;
 }
 
 .slider_txt h1 {
     color: #ffffff;
-    font-family: "Raleway";
+    font-family: 'raleway_extrabold';
     font-size: 52px;
-    font-weight: bold;
     text-align: center;
     margin: 14px 0 19px 0;
 }
 
 .slider_txt p {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -230,23 +308,22 @@ header {
     border-radius: 3px;
     background-color: #998675;
     color: #ffffff;
-    font-family: "Raleway";
+    font-family: 'raleway_extrabold';
     font-size: 14px;
-    font-weight: bold;
     line-height: 53px;
     text-transform: uppercase;
     text-decoration: none;
     margin: 52px 0 0 210px;
+    transition: background-color 500ms ease;
 }
 
 .slider_txt_btn:hover {
     background-color: #736357;
-    box-shadow: inset 0 -3px 0 #998675;
 }
 
 .slider_txt_btn:active {
     background-color: #d3c1ad;
-    box-shadow: inset 0 -3px 0 #998675;
+    box-shadow: inset 0 -3px 0 #736357;
 }
 
 .pagination {
@@ -256,7 +333,6 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100px;
-
 }
 
 .slider_button {
@@ -266,6 +342,7 @@ header {
     opacity: 0.5;
     border-radius: 7px;
     border: 2px solid #000;
+    transition: background-color 0.5s ease;
 }
 
 .slider_button:hover {
@@ -302,16 +379,17 @@ header {
 
 .description_icons_first span {
     color: #555555;
-    font-family: "Raleway";
+    font-family: 'raleway_semibold';
     font-size: 22px;
     font-weight: bold;
     display: block;
     margin: 30px 0 20px 0;
+    transition: color 0.5s ease-out;
 }
 
 .description_icons_first p {
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -324,11 +402,13 @@ header {
     height: 3px;
     background-color: #f1eee9;
     margin: 30px 0 0 105px;
+    transition: background-color 0.5s ease-out;
 }
 
 .descr_icon_svg {
     fill: #555555;
     margin-left: 109px;
+    transition: fill 0.5s ease-out;
 }
 
 .description_icons_first:hover span {
@@ -343,7 +423,7 @@ header {
     background-color: #c7b299;
 }
 
-/*BG-images*/
+/*------------------BG-images-----------------*/
 .bg-img {
     width: 1920px;
     min-height: 700px;
@@ -358,9 +438,8 @@ header {
 
 .bg-img h2 {
     color: #555555;
-    font-family: "Raleway";
+    font-family: 'raleway_semibold';
     font-size: 30px;
-    font-weight: bold;
     text-align: center;
     padding-top: 80px;
     margin: 0 0 24px 0;
@@ -368,7 +447,7 @@ header {
 
 .bg-img p {
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
@@ -377,7 +456,7 @@ header {
     text-align: center;
 }
 
-/*Aside purchase*/
+/*----------------Aside purchase-------------*/
 .purchase {
     background-color: #f4f5f8;
     background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
@@ -385,7 +464,7 @@ header {
 }
 
 .purchase h3 {
-    font-family: Raleway;
+    font-family: 'raleway';
     font-size: 28px;
     font-weight: 400;
     color: #c7b299;
@@ -398,9 +477,8 @@ header {
 
 .purchase_txt {
     color: #615855;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 18px;
-    font-weight: 300;
     padding-bottom: 50px;
     display: inline-block;
 }
@@ -413,31 +491,30 @@ header {
     border-radius: 3px;
     background-color: #998675;
     color: #ffffff;
-    font-family: "Raleway";
+    font-family: 'raleway_extrabold';
     font-size: 14px;
-    font-weight: bold;
     line-height: 50px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     float: right;
     margin-right: 374px;
+    transition: background-color, box-shadow 500ms ease-in;
 }
 
 .purchase-btn:hover {
     background-color: #736357;
-    box-shadow: inset 0 -3px 0 #998675;
 }
 
 .purchase-btn:active {
     background-color: #d3c1ad;
-    box-shadow: inset 0 -3px 0 #736357;
+    box-shadow: inset 0 -3px 0 #d3c1ad;
 }
 
 /*----------- Второй блок c картинками ----------*/
 .img_title {
     color: #555555;
-    font-family: "Raleway - Semi Bold";
+    font-family: 'raleway_semibold';
     font-size: 30px;
     font-weight: 400;
     text-align: center;
@@ -452,9 +529,8 @@ header {
 
 .img_txt {
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 16px;
-    font-weight: 300;
     line-height: 28px;
     height: 43px;
     width: 777px;
@@ -473,14 +549,14 @@ header {
     border-radius: 3px;
     background-color: #fff;
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 14px;
-    font-weight: 300;
     line-height: 32px;
     text-decoration: none;
     text-align: center;
     border: 1px solid #ebebeb;
     margin-right: 10px;
+    transition: background-color, color 0.8s ease-out;
 }
 
 .btn_all:nth-child(1) {
@@ -494,17 +570,11 @@ header {
 .btn_all:hover {
     background-color: #998675;
     color: #ffffff;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 300;
 }
 
 .btn_all:active {
     background-color: #fff;
     color: #8c8c8c;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 300;
 }
 
 .images_row {
@@ -525,6 +595,7 @@ header {
     position: absolute;
     top: 210px;
     left: 20px;
+    transition: border 0.8s ease-out;
 }
 
 .link_btn {
@@ -532,11 +603,16 @@ header {
     border: none;
     font: inherit;
     color: inherit;
-    background-color: transparent;
     top: 106px;
     left: 144px;
     position: absolute;
     display: none;
+    background-image: url(../img/link.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    outline: none;
 }
 
 .search_btn {
@@ -544,26 +620,24 @@ header {
     border: none;
     font: inherit;
     color: inherit;
-    background-color: transparent;
     top: 106px;
     left: 198px;
     position: absolute;
     display: none;
+    background-image: url(../img/lupa.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 25px;
+    outline: none;
 }
 
 .images_row_item:hover .img_under_title {
     color: #ffffff;
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 500;
 }
 
 .images_row_item:hover .img_under_txt {
     color: #c7b299;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
 }
 
 .images_row_item:hover .images_row_txt {
@@ -596,28 +670,28 @@ header {
     background-color: #fbfaf8;
     display: flex;
     flex-direction: column;
-
+    transition: background-color 0.8s ease-out;
 }
 
 .images_main_img {
     display: block;
+    transition: filter 1s ease-out;
 }
 
 .img_under_title {
     color: #c7b299;
-    font-family: Raleway;
+    font-family: 'raleway_medium';
     font-size: 20px;
-    font-weight: 500;
     padding: 30px 0 15px 30px;
+    transition: color 0.5s ease-in;
 }
 
 .img_under_txt {
     color: #d1d1d1;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
     padding: 0 0 30px 30px;
+    transition: color 0.5s ease-in;
 }
 
 .btn_img {
@@ -628,25 +702,23 @@ header {
     border-radius: 3px;
     background-color: #998675;
     color: #ffffff;
-    font-family: "Raleway - Extra Bold";
+    font-family: 'raleway_extrabold';
     font-size: 14px;
-    font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     margin: 40px 0 80px 876px;
+    transition: background-color 500ms ease-in;
 }
 
 .btn_img:hover {
     background-color: #736357;
-    box-shadow: inset 0 -3px 0 #998675;
 
 }
 
 .btn_img:active {
     background-color: #d3c1ad;
-    box-shadow: inset 0 -3px 0 #736357;
 }
 
 /*--------------Video-------------*/
@@ -678,7 +750,7 @@ header {
 
 .video_txt h3 {
     color: #ffffff;
-    font-family: Raleway;
+    font-family: 'raleway_medium';
     font-size: 30px;
     font-weight: 500;
     text-align: center;
@@ -688,7 +760,7 @@ header {
 
 .video_txt_span {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
@@ -699,7 +771,7 @@ header {
 
 .video_time {
     color: #c7b299;
-    font-family: Montserrat;
+    font-family: 'montserrat';
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -721,17 +793,15 @@ header {
 
 .mobile h1 {
     color: #555555;
-    font-family: "Raleway";
+    font-family: 'raleway_semibold';
     font-size: 30px;
-    font-weight: bold;
     margin-bottom: 40px;
 }
 
 .mobile p {
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 16px;
-    font-weight: 300;
     line-height: 28px;
     width: 667px;
     margin-bottom: 45px;
@@ -744,7 +814,7 @@ header {
 
 .mobile_list li {
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 16px;
     font-weight: 300;
     line-height: 32px;
@@ -757,20 +827,20 @@ header {
     background-color: #f4f5f8;
     background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
     display: flex;
+    justify-content: center;
 }
 
-.stats_block:first-child {
-    padding-left: 540px;
+.stats_block:last-child {
+    margin-right: 0;
 }
 
 .stats_block {
-    padding-top: 69px;
+    margin-top: 69px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     text-align: center;
-    margin-right: 100px;
+    margin-right: 80px;
 }
 
 .stats_block::after {
@@ -779,45 +849,514 @@ header {
     width: 30px;
     height: 2px;
     background-color: #ffffff;
-    margin: 30px 0 0 50px;
+    margin: 32px auto;
 }
 
 .stats_block_svg {
-    display: block;
-    padding-left: 45px;
+    margin: 0 auto;
     fill: #c7b299;
 }
 
 .stats_block_numbers {
     color: #ffffff;
-    font-family: "Montserrat";
+    font-family: 'montserrat_extralight';
     font-size: 48px;
-    font-weight: lighter;
-    line-height: 36px;
-    margin: 30px 0 20px 0;
+    margin: 30px auto 20px auto;
 }
 
 .stats_block_txt {
     color: #c7b299;
-    font-family: Montserrat;
+    font-family: 'montserrat_light';
     font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
     text-transform: uppercase;
 }
 
-.stats_block:nth-child(4) svg {
-    padding-left: 25px;
+/*--------------Recent Posts---------------*/
+.post {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
 }
 
-.stats_block:nth-child(5) svg {
-    padding-left: 28px;
+.post_title {
+    color: #555555;
+    font-family: 'raleway_semibold';
+    font-size: 30px;
+    text-align: center;
+    margin: 82px 0 30px 0;
+    width: 100%;
 }
 
-.stats_block:nth-child(3) svg {
-    padding-left: 40px;
+.post_p {
+    color: #8c8c8c;
+    line-height: 28px;
+    font-family: 'montserrat_light';
+    font-size: 16px;
+    width: 770px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    white-space: pre-wrap;
 }
 
-.stats_block:nth-child(4)::after {
-    margin-left: 30px;
+.post_block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    max-width: 370px;
+    box-sizing: border-box;
+    position: relative;
+    transition: background-color 0.8s ease-in-out;
+}
+
+.post_block:last-child {
+    margin-right: 0;
+}
+
+.post_block_txt::before {
+    content: '30';
+    font-family: 'montserrat_light';
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 35px;
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    border-radius: 3px 3px 0 0;
+    background-color: #363636;
+    text-align: center;
+    left: 20px;
+    top: 20px;
+}
+
+.post_block::after {
+    content: 'Sep.';
+    text-align: center;
+    width: 50px;
+    border-radius: 0 0 3px 3px;
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    background-color: #252525;
+    font-family: 'roboto';
+    color: #ffffff;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.post_block_img {
+    transition: filter 1s ease-in-out;
+}
+
+.post_block:hover .post_block_img {
+    filter: brightness(30%);
+}
+
+.post_block:hover {
+    background-color: #362f2d;
+}
+
+.post_block:hover .post_block_txt {
+    color: #c7b299;
+}
+
+.post_block:hover .post_block_p {
+    color: #ffffff;
+}
+
+.post_block:hover .post_block_link {
+    color: #c7b299;
+}
+
+.post_block:hover .post_block_link:after {
+    border-left: 6px solid #c7b299;
+}
+
+.post_block:hover:after {
+    background-color: #a48d72;
+    color: #ffffff;
+}
+
+.post_block:hover .post_block_txt::before {
+    background-color: #c7b299;
+    color: #ffffff;
+}
+
+.post_block_txt {
+    color: #555555;
+    font-family: 'raleway_medium';
+    font-size: 20px;
+    margin: 30px 0 20px 29px;
+    transition: color 2s ease-out;
+}
+
+.post_block_p {
+    color: #8c8c8c;
+    font-family: 'montserrat_light';
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 27px;
+    margin-left: 29px;
+    transition: color 2s ease;
+}
+
+.post_block_link {
+    color: #c7b299;
+    font-family: 'montserrat_light';
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 29px;
+    text-decoration: none;
+    margin-bottom: 27px;
+    position: relative;
+    margin-right: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.post_block_link::after {
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    border-left: 6px solid #c7b299;
+    left: 87px;
+    bottom: 11px;
+}
+
+.post_block:hover .post_block_link:hover {
+    color: burlywood;
+}
+
+.post_block:hover .post_block_link:hover:after {
+    border-left: 6px solid burlywood;
+}
+
+.post_block:hover .post_block_link:active {
+    color: #998675;
+}
+
+.post_block:hover .post_block_link:active:after {
+    border-left: 6px solid #998675;
+}
+
+.arrow_left_btn {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+    fill: #d1d1d1;
+    right: 1000px;
+    bottom: -70px;
+    outline: none;
+}
+
+.arrow_right_btn {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+    fill: #d1d1d1;
+    right: 970px;
+    bottom: -70px;
+    outline: none;
+}
+
+.arrow_left_btn:hover {
+    fill: #c7b299;
+}
+
+.arrow_right_btn:hover {
+    fill: #c7b299;
+}
+
+/*-----------------footer-logos-------------*/
+.footer_logos {
+    margin-top: 142px;
+    background-image: url(../img/footer_big1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 489px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_logos_link {
+    display: block;
+    margin-top: 140px;
+    margin-right: 90px;
+    margin-bottom: auto;
+}
+
+.footer_logos_link:last-child {
+    margin-right: 0;
+}
+
+.footer_logos img {
+    display: block;
+}
+
+.footer_text {
+    width: 100%;
+    min-height: 508px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer_text_block {
+    flex-direction: column;
+    width: 276px;
+    margin-top: 80px;
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+
+.footer_logo_icon {
+    fill: #ffffff;
+}
+
+.footer_logo_link {
+    text-decoration: none;
+    display: flex;
+}
+
+.footer_logo_icon {
+    fill: #ffffff;
+    transition: fill 0.5s ease-out;
+}
+
+.footer_logo_txt {
+    color: #ffffff;
+    font-family: 'raleway';
+    font-size: 34px;
+    letter-spacing: -1.36px;
+    margin: 10px 0 0 0;
+    transition: color 0.5s ease-out;
+}
+
+.footer_logo_link:hover .footer_logo_icon {
+    fill: #998675;
+}
+
+.footer_logo_link:hover .footer_logo_txt {
+    color: #998675;
+}
+
+.footer_logo_link:active .footer_logo_icon {
+    fill: burlywood;
+}
+
+.footer_logo_link:active .footer_logo_txt {
+    color: burlywood;
+}
+
+.footer_text_block_p {
+    color: #555555;
+    font-family: 'montserrat_light';
+    font-size: 14px;
+    line-height: 24px;
+    white-space: pre-line;
+    margin: 25px 0 33px 0;
+}
+
+.footer_readmore {
+    color: #d1d1d1;
+    font-family: 'montserrat_light';
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: color 500ms ease-out;
+}
+
+.footer_readmore:hover {
+    color: #c7b299;
+}
+
+.footer_readmore:hover:after {
+    border-left: 6px solid #c7b299;
+}
+
+.footer_readmore:active {
+    color: #d1d1d1;
+}
+
+.footer_readmore:active:after {
+    border-left: 6px solid #d1d1d1;
+}
+
+.footer_readmore::after {
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    border-left: 6px solid #d1d1d1;
+    left: 87px;
+    bottom: 3px;
+}
+
+/*---------------Второй блок футера----------------*/
+.footer_text_title {
+    color: #ffffff;
+    font-family: 'raleway_bold';
+    font-size: 24px;
+    margin-bottom: 33px;
+}
+
+.footer_text_data {
+    color: #363636;
+    font-family: 'montserrat_light';
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.footer_text_slice:hover .footer_text_data {
+    color: #ffffff;
+}
+
+.footer_text_slice:hover .footer_text_p {
+    color: #c7b299;
+}
+
+.footer_text_p {
+    color: #555555;
+    font-family: 'montserrat_light';
+    font-size: 14px;
+    line-height: 20px;
+    white-space: pre-wrap;
+}
+
+.footer_text_slice {
+    position: relative;
+}
+
+.footer_text_slice::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #252525;
+    margin-top: 20px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.footer_text_slice:last-child::after {
+    display: none;
+}
+
+.footer_text_twitter_p {
+    color: #555555;
+    font-family: 'montserrat_light';
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.twit_link {
+    text-decoration: none;
+    color: #00bff3;
+}
+
+.twit_link:hover {
+    color: aqua;
+}
+
+.footer_text_twitter_time {
+    color: #363636;
+    font-family: 'montserrat_light';
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-top: 7px;
+}
+
+.twit_link_bit {
+    text-decoration: none;
+    color: #959595;
+}
+
+.twit_link_bit:hover {
+    color: #d3c1ad;
+}
+
+.footer_text_twitter_time::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #252525;
+    margin-top: 20px;
+}
+
+.footer_text_twitter_time:last-child::after {
+    display: none;
+}
+
+.footer_text_img:nth-child(2) {
+    margin-right: 10px;
+}
+
+.footer_text_img:last-child {
+    margin: 10px 0 0 10px;
+}
+
+footer {
+    min-height: 111px;
+    background-color: #111111;
+    white-space: normal;
+}
+
+.footer_darker {
+    color: #555555;
+    font-family: 'montserrat_light';
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer_lighter {
+    color: #959595;
+    font-family: 'montserrat_light';
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer_faq {
+    color: #c7b299;
+    font-family: 'montserrat_light';
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer_faq:hover {
+    color: #d3c1ad;
+}
+
+.left_side {
+    float: left;
+    margin-left: 376px;
+    margin-top: 45px;
+}
+
+.right_side {
+    float: right;
+    margin-right: 374px;
+    margin-top: 45px;
 }
