@@ -1276,6 +1276,10 @@ header {
     color: aqua;
 }
 
+.twit_link:active {
+    color: aquamarine;
+}
+
 .footer_text_twitter_time {
     color: #363636;
     font-family: 'montserrat_light';
