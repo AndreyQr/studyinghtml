@@ -89,14 +89,14 @@ body {
 
 header {
     background-image: url(../img/bg_photo_header.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     min-height: 1024px;
 }
 
 .header_logo {
     padding: 40px 0 0 0;
-    margin-left: 376px;
+    margin-left: 20%;
     display: flex;
     box-sizing: border-box;
 }
@@ -198,7 +198,7 @@ header {
 }
 
 .search_icon:focus {
-    width: 150px;
+    width: 15%;
     transition: width 1s ease-out;
     background-position: right;
     border: 1px solid gray;
@@ -207,14 +207,13 @@ header {
 .mobile_checkbox {
     display: none;
 }
-
 /*------------SLIDER-----------*/
 .slider {
     position: relative;
 }
 
 .slider-arrow-left {
-    width: 40px;
+    width: 100%;
     height: 73px;
     position: relative;
 }
@@ -243,7 +242,7 @@ header {
 }
 
 .slider-arrow-right {
-    width: 40px;
+    width: 100%;
     height: 73px;
     position: relative;
 }
@@ -272,7 +271,7 @@ header {
 }
 
 .slider_txt {
-    width: 34%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -332,11 +331,11 @@ header {
     top: 600px;
     display: flex;
     justify-content: space-between;
-    width: 100px;
+    width: 5%;
 }
 
 .slider_button {
-    width: 11px;
+    width: 11%;
     height: 11px;
     background-color: #ffffff;
     opacity: 0.5;
@@ -359,18 +358,23 @@ header {
 /*--------- Блок с иконками SVG--------*/
 .description_icons {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto;
+    padding: 80px 0 80px 0;
+    width: 70%;
+    box-sizing: border-box;
 }
 
-.description_icons_first:first-child {
-    margin-left: 378px;
-}
 
 .description_icons_first {
-    width: 275px;
-    margin: 80px 30px 80px 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    box-sizing: border-box;
 }
 
 .description_icons_first {
@@ -381,17 +385,15 @@ header {
     color: #555555;
     font-family: 'raleway_semibold';
     font-size: 22px;
-    font-weight: bold;
-    display: block;
-    margin: 30px 0 20px 0;
     transition: color 0.5s ease-out;
+    margin: 10% 0 10% 0;
+    box-sizing: border-box;
 }
 
 .description_icons_first p {
     color: #8c8c8c;
     font-family: 'montserrat_light';
     font-size: 14px;
-    font-weight: 300;
     line-height: 24px;
 }
 
@@ -401,13 +403,13 @@ header {
     width: 70px;
     height: 3px;
     background-color: #f1eee9;
-    margin: 30px 0 0 105px;
+    margin: 30px auto;
     transition: background-color 0.5s ease-out;
 }
 
 .descr_icon_svg {
     fill: #555555;
-    margin-left: 109px;
+    margin: auto;
     transition: fill 0.5s ease-out;
 }
 
@@ -579,9 +581,11 @@ header {
 }
 
 .images_row {
-    margin: 40px 0 0 376px;
+    margin: 40px 0 0 20%;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .images_row_item {
@@ -709,13 +713,14 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    margin: 40px 0 80px 876px;
+    margin: 40px auto 80px auto;
     transition: background-color 500ms ease-in;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .btn_img:hover {
     background-color: #736357;
-
 }
 
 .btn_img:active {
@@ -731,20 +736,20 @@ header {
 .video_txt {
     position: absolute;
     top: 320px;
-    left: 680px;
     z-index: 5;
+    width: 100%;
 }
 
 .icon_circle {
     position: absolute;
-    left: 230px;
+    left: 900px;
     top: -120px;
 }
 
 .icon_play {
     fill: #ffffff;
     position: absolute;
-    left: 245px;
+    left:915px;
     top: -104px;
 }
 
@@ -756,16 +761,16 @@ header {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .video_txt_span {
     color: #ffffff;
     font-family: 'montserrat_light';
     font-size: 16px;
-    font-weight: 300;
     line-height: 28px;
     text-align: center;
-    width: 562px;
+    width: 100%;
     display: block;
 }
 
@@ -804,7 +809,8 @@ header {
     font-family: 'montserrat_light';
     font-size: 16px;
     line-height: 28px;
-    width: 667px;
+/*    width: 667px;*/
+    width: 100%;
     margin-bottom: 45px;
 }
 
@@ -1057,6 +1063,8 @@ header {
     right: 1000px;
     bottom: -70px;
     outline: none;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .arrow_right_btn {
@@ -1124,7 +1132,7 @@ header {
 
 .footer_text_block {
     flex-direction: column;
-    width: 276px;
+    width: 15%;
     margin-top: 80px;
     margin-right: 40px;
     box-sizing: border-box;
@@ -1376,16 +1384,20 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
 }
-
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: hidden; 
+    }
 .left_side {
-    float: left;
-    margin-left: 376px;
     margin-top: 45px;
+    margin-right: 25%;
 }
 
 .right_side {
-    float: right;
-    margin-right: 374px;
     margin-top: 45px;
 }
 
@@ -1414,8 +1426,7 @@ footer a:active {
         width: 35px;
         height: 50px;
         cursor: pointer;
-        transition: .4s;
-        margin-left: 310px;
+        margin: 0 0 0 150px;
         box-sizing: border-box;
     }
 
@@ -1457,6 +1468,8 @@ footer a:active {
 
     .mobile_container {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     .mobile_checkbox:checked ~ mobile_container {
@@ -1484,7 +1497,7 @@ footer a:active {
     }
 
     body {
-        width: 100%;
+        width: 576px;
     }
 
     .header_logo {
@@ -1500,17 +1513,17 @@ footer a:active {
     }
 
     .header_logo_cont {
-        height: 70px;
     }
 
     .nav_list {
         margin: 0;
+        width: 50%;
     }
 
     .nav_list li {
         padding-bottom: 5px;
         text-align: center;
-
+        overflow: hidden;
     }
 
     .cart {
@@ -1518,8 +1531,8 @@ footer a:active {
     }
 
     .search_icon {
-        top: 275px;
-        right: 180px;
+        margin-left: -25px;
+        margin-top: -32px;
     }
 
     .slider {
@@ -1628,35 +1641,41 @@ footer a:active {
 
     /*---------------Video section--------------*/
     .video_presentation {
-        overflow: hidden;
         box-sizing: border-box;
-        min-height: 300px;
+        min-height: 200px;
     }
 
     .video_presentation video {
-        width: 200%;
+        width: 100%;
     }
 
     .video_txt {
+/*
         top: 40px;
+        left: 0;
+*/
+        top: -50px;
         left: 0;
     }
 
     .icon_circle {
         position: absolute;
         margin: 0 auto;
-        top: -15px;
+        top: 50px;
+        left: 240px;
     }
 
     .icon_play {
-        top: 0;
-        margin: 0 auto;
+        top: 65px;
+        left: 255px;
     }
 
     .video_txt h3 {
-        margin: 120px 0 30px 0;
+        margin: 145px 0 10px 0;
     }
-
+    .video_time {
+        margin-top: -5px;
+    }
     /*-------------------telephone in hand-------*/
     .mobile {
         min-height: 700px;
@@ -1673,7 +1692,7 @@ footer a:active {
     }
 
     .mobile p {
-        width: 567px;
+        width: 100%;
         margin: 0;
         text-align: left;
     }
@@ -1722,19 +1741,20 @@ footer a:active {
         align-content: center;
         flex-wrap: wrap;
         background-size: cover;
-        background-position: center
+        background-position: center;
     }
 
     .footer_logos_link {
         margin: 0;
         padding: 15px;
-        box-sizing: border-box
+        box-sizing: border-box;
     }
 
     /*--------------footermobile-------------*/
     .footer_text_block {
         margin-right: 15px;
         margin-top: 20px;
+        width: 70%;
     }
 
     footer {
