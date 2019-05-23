@@ -81,7 +81,9 @@
     margin: 0;
     padding: 0;
 }
-
+img {
+    max-width: 100%;
+}
 body {
     margin: 0 auto;
     width: 1920px;
@@ -297,6 +299,7 @@ header {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+    white-space: pre-wrap;
 }
 
 .slider_txt_btn {
@@ -359,11 +362,11 @@ header {
 .description_icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     margin: 0 auto;
     padding: 80px 0 80px 0;
-    width: 70%;
+    width: 75%;
     box-sizing: border-box;
 }
 
@@ -375,6 +378,7 @@ header {
     justify-content: space-between;
     align-content: center;
     box-sizing: border-box;
+    width: 20%;
 }
 
 .description_icons_first {
@@ -772,6 +776,7 @@ header {
     text-align: center;
     width: 100%;
     display: block;
+    white-space: pre-wrap;
 }
 
 .video_time {
@@ -795,6 +800,7 @@ header {
 
 .mobile_txt {
     padding: 195px 0 0 877px;
+    width: 35%;
 }
 
 .mobile h1 {
@@ -854,7 +860,7 @@ header {
     content: '';
     display: block;
     width: 30px;
-    height: 2px;
+    height: 3px;
     background-color: #ffffff;
     margin: 32px auto;
 }
@@ -1031,8 +1037,8 @@ header {
     position: absolute;
     border: 5px solid transparent;
     border-left: 6px solid #c7b299;
-    left: 87px;
-    bottom: 11px;
+    margin-top: 4px;
+    margin-left: 5px;
 }
 
 .post_block:hover .post_block_link:hover {
@@ -1095,7 +1101,7 @@ header {
     background-image: url(../img/footer_big1.jpg);
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 489px;
+    min-height: 488px;
     display: flex;
     justify-content: center;
 }
@@ -1426,7 +1432,7 @@ footer a:active {
         width: 35px;
         height: 50px;
         cursor: pointer;
-        margin: 0 0 0 150px;
+        margin: 5px 0 0 250px;
         box-sizing: border-box;
     }
 
@@ -1497,7 +1503,7 @@ footer a:active {
     }
 
     body {
-        width: 576px;
+        width: 100%;
     }
 
     .header_logo {
@@ -1512,9 +1518,6 @@ footer a:active {
         background-repeat: no-repeat;
     }
 
-    .header_logo_cont {
-    }
-
     .nav_list {
         margin: 0;
         width: 50%;
@@ -1527,12 +1530,16 @@ footer a:active {
     }
 
     .cart {
-        margin-left: 30px;
+        margin-left: -30px;
     }
 
     .search_icon {
-        margin-left: -25px;
+        margin-left: 0;
         margin-top: -32px;
+        transition: reverse;
+    }
+    .search_icon:focus {
+        width: 20%;
     }
 
     .slider {
@@ -1541,13 +1548,20 @@ footer a:active {
 
     /*---------------Блок с SVG иконками------------------*/
     .description_icons {
+        display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 0 0 0;
     }
 
     .description_icons_first {
         margin: 0;
-        padding: 15px;
+        padding: 0;
         box-sizing: border-box;
+        width: 50%;
+        padding: 15px;
     }
 
     .description_icons_first:first-child {
@@ -1579,28 +1593,21 @@ footer a:active {
     .purchase {
         padding: 0;
         box-sizing: border-box;
-        min-height: 150px;
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     .purchase-btn {
-        margin: 0 auto;
+        margin: 20px auto;
         width: 30%;
-        margin-top: 20px;
-    }
-
-    .purchase h3 {
-        padding-top: 10px;
-        margin-bottom: 0;
-        white-space: pre;
-        padding-left: 10px;
     }
 
     .purchase_txt {
+        display: inline-block;
         padding: 0;
-        display: inline;
         text-align: center;
     }
 
@@ -1623,8 +1630,15 @@ footer a:active {
 
     .btn_all {
         min-width: 15%;
+        padding: 0 5px;
+        box-sizing: border-box;
     }
-
+    .btn_all:first-child {
+        min-width: 50px;
+    }
+    .btn_all:last-child {
+        min-width: 0px;
+    }
     .images_row {
         margin: 15px 0 0 0;
         box-sizing: border-box;
@@ -1638,40 +1652,35 @@ footer a:active {
     .btn_img {
         margin: 20px auto;
     }
-
+    
     /*---------------Video section--------------*/
     .video_presentation {
         box-sizing: border-box;
         min-height: 200px;
     }
-
     .video_presentation video {
         width: 100%;
     }
 
     .video_txt {
-/*
-        top: 40px;
-        left: 0;
-*/
-        top: -50px;
-        left: 0;
+        top: 0;
     }
-
+    .video_txt_span {
+        white-space: normal;
+    }
     .icon_circle {
         position: absolute;
-        margin: 0 auto;
-        top: 50px;
+        top: 0;
         left: 240px;
     }
 
     .icon_play {
-        top: 65px;
+        top: 15px;
         left: 255px;
     }
 
     .video_txt h3 {
-        margin: 145px 0 10px 0;
+        margin: 95px 0 0 0;
     }
     .video_time {
         margin-top: -5px;
@@ -1684,6 +1693,7 @@ footer a:active {
 
     .mobile_txt {
         padding: 0;
+        width: 100%;
     }
 
     .mobile h1 {
